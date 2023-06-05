@@ -15,13 +15,13 @@ class Conversation extends Model
         'last_time_message'
     ];
 
-    // protected $guarded = [];
-
-    public function messages(){
+    public function messages()
+    {
         return $this->hasMany(Message::class);
     }
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 }
